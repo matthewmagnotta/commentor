@@ -1,10 +1,6 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import {
-  decrement,
-  increment,
-  incrementByAmount,
-} from "../../store/slices/comments";
+import {setComments} from "../../store/slices/comments";
 // material ui
 import Button from "@material-ui/core/Button";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
@@ -45,7 +41,7 @@ const Form = (props) => {
       alert("Comment can't be blank");
     } else {
       dispatch(
-        incrementByAmount([
+        setComments([
           { name: commentName.value.toLowerCase(), body: commentText.value },
         ])
       );
@@ -55,7 +51,7 @@ const Form = (props) => {
 
   return (
     <FormContainer>
-    <FormHeader> Add Comment </FormHeader>
+    <FormHeader> Add Comment 😎 </FormHeader>
       <FForm
         onSubmit={(e) => {
           e.preventDefault();

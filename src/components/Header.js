@@ -10,6 +10,8 @@ import { openCommentsModal } from "store/slices/view";
 
 //components
 import TopCommenters from "./TopCommenters";
+//images
+import commentorLogo from '../images/commentorLogo.svg'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -32,10 +34,8 @@ const Header = (props) => {
   return (
     <>
       <AppBar position="fixed" className={classes.root}>
-        <Toolbar>
-          <Typography variant="h6" className={classes.title}>
-            Commentor
-          </Typography>
+        <Toolbar style={{display:'flex', justifyContent:'space-between'}}>
+        <img width={100} src={commentorLogo}/>
           <Button
             endIcon={<Icon>send</Icon>}
             variant="outlined"

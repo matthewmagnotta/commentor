@@ -7,13 +7,13 @@ export const commentsSlice = createSlice({
     value: mockComments,
   },
   reducers: {
-    incrementByAmount: (state, action) => {
+    setComments: (state, action) => {
       state.value = [...action.payload, ...state.value];
     },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { incrementByAmount } = commentsSlice.actions;
+export const { setComments } = commentsSlice.actions;
 
 export default commentsSlice.reducer;

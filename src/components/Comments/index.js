@@ -1,11 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useSelector, useDispatch } from "react-redux";
-import {
-  decrement,
-  increment,
-  incrementByAmount,
-} from "../../store/slices/comments";
+import { setComments} from "../../store/slices/comments";
 //Material UI
 import Avatar from "@material-ui/core/Avatar";
 import { makeStyles } from "@material-ui/core/styles";
@@ -35,10 +31,12 @@ const Comments = (props) => {
   //fetching data and setting the comments array with the response
   useEffect(() => {
     const fetchData = async () => {
-      const result = await axios(
-        "https://jsonplaceholder.typicode.com/comments"
-      );
-      dispatch(incrementByAmount(result.data));
+     try {
+       const result = await axios("https://jsonplaceholder.typicode.com/comments");
+       dispatch(setComments(result.data));
+     } catch (error) {
+       console.log(error)
+     }
     };
     fetchData();
   }, []);
