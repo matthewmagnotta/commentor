@@ -12,6 +12,7 @@ import { makeStyles, useTheme } from "@material-ui/core/styles";
 import {
   FormContainer,
   FForm,
+  FormHeader,
   FormInput,
   FormTextArea,
 } from "./FormElements.js";
@@ -54,6 +55,7 @@ const Form = (props) => {
 
   return (
     <FormContainer>
+    <FormHeader> Add Comment </FormHeader>
       <FForm
         onSubmit={(e) => {
           e.preventDefault();
@@ -69,7 +71,7 @@ const Form = (props) => {
           placeholder="Start typing to add your comment"
           {...commentText}
         />
-        <Button variant="contained" color="primary" type="submit">
+        <Button variant="contained" size='small' color="primary" type="submit">
           {" "}
           ADD COMMENT{" "}
         </Button>

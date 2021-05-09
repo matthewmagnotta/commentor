@@ -13,9 +13,11 @@ import { mockComments } from "../store/api.js";
 function App() {
   const theme = createMuiTheme({
     shadows: ["none"],
+
     palette: {
       primary: {
         main: "#00BCD4",
+        contrastText: '#fff'
       },
       secondary: {
         main: "#f1f1f1",

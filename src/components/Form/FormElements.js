@@ -2,10 +2,14 @@ import styled from "styled-components";
 
 export const FormContainer = styled.div`
   display: flex;
+  flex-direction:column;
   margin: 0 auto;
-  width: 50%;
-  max-width: 500px;
   justify-content: center;
+  align-items:center;
+  background:white;
+  height:500px;
+  width:600px;
+  border-radius:33px;
 `;
 export const FForm = styled.form`
   display: flex;
@@ -14,32 +18,31 @@ export const FForm = styled.form`
 
 export const FormInput = styled.input`
   margin: 10px;
+  padding:30px;
   background: white;
   color: rgb(7 2 18);
   transition: all 200ms ease;
   border-left: 0 solid transparent;
-  border: 0;
   width: 500px;
-  height: 3.8rem;
-  border-radius: 3px;
-  box-shadow: 0 0 2rem rgb(0, 0, 0, 20%);
+  border-radius:33px;
+  border: 1px solid #00BCD4;
+
 `;
 export const FormTextArea = styled.textarea`
+  display:flex;
+  justify-content:center;
+  padding:30px;
   margin: 10px;
   background: white;
   color: rgb(7 2 18);
   transition: all 200ms ease;
-  border-left: 0 solid transparent;
-  border: 0;
+  border-radius:33px;
+  border: 1px solid #00BCD4;
   height: 6.8rem;
   width: 500px;
-  border-radius: 3px;
-  box-shadow: 0 0 2rem rgb(0, 0, 0, 20%);
+  max-width:500px;
 `;
-export const Button = styled.button`
-  display: flex;
-  border-radius: 50px;
-  height: 30px;
-  background-color: #00bcd4;
-  box-shadow: 0;
-`;
+
+export const FormHeader = styled.h1`
+  color: #00BCD4  
+`
