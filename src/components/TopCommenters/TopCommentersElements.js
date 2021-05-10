@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const TopCommentersContainer = styled.div`
   display: flex;
-  margin: 0 auto;
+  margin: 30px auto 0 auto;
   background: #00bcd4;
   height: 500px;
 `;
@@ -20,6 +20,8 @@ export const TopCommentersTextBlockContainer = styled.div`
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  margin-top:20px;
+
 `;
 
 export const TopCommentersBlock = styled.div`
