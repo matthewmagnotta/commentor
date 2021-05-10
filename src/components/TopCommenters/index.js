@@ -1,9 +1,4 @@
-import { useSelector, useDispatch } from "react-redux";
-import {
-  decrement,
-  increment,
-  incrementByAmount,
-} from "../../store/slices/comments";
+import { useSelector } from "react-redux";
 //material ui
 import Avatar from "@material-ui/core/Avatar";
 import { makeStyles } from "@material-ui/core/styles";
@@ -16,7 +11,6 @@ import {
   TopCommentersTextBlockContainer,
   TopCommentersName,
   TopCommentersCount,
-  Heading,
 } from "./TopCommentersElements";
 //images
 import topCommenter from "../../images/topCommenters.svg";
@@ -62,7 +56,7 @@ const TopCommenters = (props) => {
   return (
     <TopCommentersContainer>
       <TopCommentersContents>
-        <img width={400} src={topCommenter} />
+        <img alt='Top Commenters' width={400} src={topCommenter} />
         <TopCommentersTextBlockContainer>
           {topCommentsArray.map((comment, index) => {
             return (

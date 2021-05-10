@@ -3,9 +3,11 @@
 
 ## Summary
 
-I had a blast developing this project, learned a ton too!  I am extremely happy with the way it turned out! I successfully completed all the features.
+I had a blast developing this project, learned a ton too!  I am extremely happy with the way it turned out! I successfully completed all the features including fetching from an API.
 
-I first got the app working by using the App component as the closest ancestor to share state as props to components. Once I got that working, I started learning the redux-toolkit library. After getting read up on redux-toolkit, I refactored the app to store the comments array in the redux-store. I architected the components to be modular and reusable depending only on an array to render data, which made refactoring a breeze. Forgive me for not using redux best practices, as I just learned it to develop this project. I now have a new found love for redux-toolkit tho haha, it's awesome makes things a lot easier! I used the Styled-Components and Materiaul-UI libraries to neatly encapsulate component-style within the application. Overall this was a really fun project and I hope I get the opportunity to bring what I learned to your team!
+I first got the application working by using the App component as the closest ancestor to share state as props to components. Once I got that working, I started learning the redux-toolkit library. After getting read up on redux-toolkit, I refactored the application to store the comments array in the redux-store. I architected the components to be modular and reusable depending only on an array to render data, which made refactoring a breeze. Forgive me for not using redux best practices, as I just learned it to develop this project. I now have a new found love for redux-toolkit tho haha, it's awesome, makes things a lot easier! I used the Styled-Components and Materiaul-UI libraries to neatly encapsulate component-style within the application. I chose to go with the KISS(keep it simple stupid) method of design in hopes for a clean & minimal design. 
+
+Overall this was a really fun project and I hope I get the opportunity to bring what I learned to your team!
 
 ## User Story
 

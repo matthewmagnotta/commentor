@@ -1,9 +1,8 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { makeStyles, useTheme } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
 import Icon from "@material-ui/core/Icon";
 import Button from "@material-ui/core/Button";
 import { openCommentsModal } from "store/slices/view";
@@ -28,14 +27,13 @@ const Header = (props) => {
   let { comments } = props;
   const classes = useStyles();
   const dispatch = useDispatch();
-  const theme = useTheme();
   const handleOpen = () => dispatch(openCommentsModal());
 
   return (
     <>
       <AppBar position="fixed" className={classes.root}>
         <Toolbar style={{display:'flex', justifyContent:'space-between'}}>
-        <img width={100} src={commentorLogo}/>
+        <img width={100} alt='commentor_logo' src={commentorLogo}/>
           <Button
             endIcon={<Icon>send</Icon>}
             variant="outlined"

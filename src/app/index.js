@@ -1,14 +1,12 @@
-import axios from "axios";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "app/App.css";
 //material ui
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
-import { deepOrange, deepPurple } from "@material-ui/core/colors";
+
 //components
 import Header from "components/Header";
 import CommentModal from "components/CommentModal";
 import Comments from "components/Comments";
-import { mockComments } from "../store/api.js";
 
 function App() {
   const theme = createMuiTheme({

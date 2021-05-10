@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import axios from "axios";
 import { useSelector, useDispatch } from "react-redux";
 import { setComments} from "../../store/slices/comments";
 //Material UI
 import Avatar from "@material-ui/core/Avatar";
 import { makeStyles } from "@material-ui/core/styles";
-import { deepOrange, deepPurple } from "@material-ui/core/colors";
 //elements
 import {
   CommentContainer,
@@ -39,7 +38,7 @@ const Comments = (props) => {
      }
     };
     fetchData();
-  }, []);
+  }, [dispatch]);
 
   return (
     <CommentContainer>
