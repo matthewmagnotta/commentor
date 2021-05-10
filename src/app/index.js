@@ -1,10 +1,10 @@
-import React from "react";
-import "app/App.css";
-//material ui
-import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
+import React from 'react';
+import 'app/App.css';
+// material ui
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
 
-//components
-import Header from "components/Header";
+// components
+import Header from 'components/Header';
 import CommentModal from "components/CommentModal";
 import Comments from "components/Comments";
 
